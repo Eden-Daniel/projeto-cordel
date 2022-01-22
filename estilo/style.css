@@ -1,0 +1,100 @@
+@charset "UTF-8"; 
+
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat&display=swap');
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Luckiest Guy', cursive;
+    --fonte3: 'Caveat', cursive;
+}
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: rgb(40, 40, 40);
+    color: whitesmoke;
+    text-align: center;
+    
+    
+    
+}
+
+header > h1{
+    padding-top: 30px;
+    font-variant: small-caps;
+    text-align: center;   
+    font-variant: small-caps; 
+    font-size: 6.5vw;
+    font-family: var(--fonte2);
+}
+
+header > p {
+    padding-bottom: 30px;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1.5em;
+    padding-left: 20px;
+    font-family: var(--fonte3);    
+    font-size: 4.5vw;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+section > p {
+    padding-bottom: 1.5em;
+}
+
+section.normal{
+    background-color: whitesmoke;
+    color: black;
+}
+
+section.imagen {
+    box-shadow: inset 5px 5px 16px rgba(0, 0, 0, 0.600);
+    background-size: cover;
+}
+
+section.imagen > p{
+    display: inline-block;
+    background-color: rgba(60, 60, 60, 0.550);    
+    padding: 6px;
+    color: whitesmoke;
+}
+
+section#fundo01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right  center;
+}
+
+section#fundo02 {
+    background-image: url('../imagens/background002.jpg');
+}
+
+footer{
+    background-color: black;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
